@@ -10,3 +10,40 @@ app.listen(3000, function() {
 })
 
 //
+
+
+
+01 Routing Challenges
+Create an Express.js app that outputs "Hello World!" when somebody goes to /home.
+
+The port number will be provided to you by {appname} as the first argument of the application, i.e., process.argv[2].
+
+Don't forget to install the Express module if you haven't already.
+
+$ npm install express --save
+
+In your solution, please use process.argv[2] instead of a fixed port number:
+
+app.listen(process.argv[2])
+
+Write an express app that does the following
+
+As a user when I go to the path /reverse any text I add after the second / will be reversed
+
+ex:
+
+http://localhost:3000/reverse/this+is+text
+
+results in "txet+si+siht"
+
+As a user when I go to the path /add with two params, those two params are added together
+
+ex:
+
+http://localhost:3000/add?a=5&b=6
+
+results in "11"
+
+As a user when I go to the path /piglatin any text I add after the second slash is displayed, but in pig latin. Plus signs (+) are converted to spaces in the output.
+
+ex:
